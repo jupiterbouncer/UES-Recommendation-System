@@ -5,7 +5,7 @@
 | Column                                                     | Type             | Description                                                                                                                                                  |
 | ---------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `user_id`                                                  | string           | Unique identifier for each user (e.g.`U001` to `U035`). Row index of the table                                                                               |
-| `song_1` to`song_15` <br />(displayed as full song titles) | integer or blank | User's rating of that song on a scale of**0–5**. A **blank/empty cell means the user has not rated that song.** It is treated as missing data (`NaN`), not 0 |
+| `song_1` to`song_15` <br />(displayed as full song titles) | integer or blank | User's rating of that song on a scale of **0** to **5**. A **blank/empty cell means the user has not rated that song.** It is treated as missing data (`NaN`), not 0 |
 
 **Rating scale:**
 
