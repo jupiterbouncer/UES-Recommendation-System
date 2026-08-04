@@ -1,5 +1,5 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 
 
 # Loading the ratings csv to return a matrix, list of user_ids and song_ids
