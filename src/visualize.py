@@ -4,7 +4,7 @@ import seaborn as sns
 from sklearn.decomposition import PCA
 
 
-def plot__average_ratings(matrix, song_ids, save_path="data/peak_average_ratings.png"):
+def plot_average_ratings(matrix, song_ids, save_path="data/peak_average_ratings.png"):
     # This basically computes mean per song across all users
     avg_ratings = np.nanmean(matrix, axis=0)
 

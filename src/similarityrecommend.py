@@ -59,3 +59,15 @@ def k_nearest_users(distance_matrix, user_index, k=3):
     return np.argsort(distances)[
         :k
     ]  # sort by the closest distances and return the highest k indices
+
+
+def recommend_songs(
+    ratings_matrix, distance_matrix, user_index, song_ids, k=3, top_n=3
+):
+    """
+    Recommends songs for a user based on their k nearest neighbors
+    Note: Only considers songs the target hasn't rated
+    """
+
+    neighbor_indexes = k_nearest_users(distance_matrix, user_index, k=k)
+    user_ratings = ratings_matrix[user_index]
